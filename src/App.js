@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyled from './GlobalStyles/GlobalStyles';
+import Logo from './Components/Logo/Logo';
+import CountContextProvider from './Context/CountContext';
+import Counter from './Components/Counter/Counter';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<CountContextProvider>
+				<Counter />
+			</CountContextProvider>
+			<Logo />
+			<GlobalStyled />
+		</>
+	);
 }
 
 export default App;
