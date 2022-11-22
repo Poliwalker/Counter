@@ -20,7 +20,7 @@ export const counterReducer = (state, action) => {
 			return { ...state, count: state.count * 2 };
 
 		case TYPES.MULTIPLY_5:
-			return { ...state, count: state.count * 2 };
+			return { ...state, count: state.count * 5 };
 
 		case TYPES.DIVIDE_2:
 			return { ...state, count: state.count / 2 };

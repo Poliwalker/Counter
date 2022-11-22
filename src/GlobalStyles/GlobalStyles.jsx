@@ -11,6 +11,10 @@ const GlobalStyled = createGlobalStyle`
 body{
     background: #131415;
     color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 `;

@@ -1,6 +1,9 @@
 import React from 'react';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 import { FaRegTimesCircle } from 'react-icons/fa';
+import { RiNumber0 } from 'react-icons/ri';
+import { RiNumber1 } from 'react-icons/ri';
+import { RiNumber2 } from 'react-icons/ri';
 import { RiNumber5 } from 'react-icons/ri';
 import { TYPES } from '../../ActionsTypes/CountActions';
 import { useCountContext } from '../../Context/CountContext';
@@ -24,14 +27,17 @@ export const AddCounter = () => {
 			</CounterButtonStyled>
 			<CounterButtonStyled onClick={handleIncrement_10}>
 				<p>
-					+<RiNumber5 size="32px" color="white" />
+					+<RiNumber1 size="32px" color="white" />
+					<RiNumber0 size="32px" color="white" />
 				</p>
 			</CounterButtonStyled>
 			<CounterButtonStyled onClick={handleMultiply_2}>
 				<FaRegTimesCircle size="32px" color="white" />
+				<RiNumber2 size="32px" color="white" />
 			</CounterButtonStyled>
 			<CounterButtonStyled last onClick={handleMultiply_5}>
 				<FaRegTimesCircle size="32px" color="white" />
+				<RiNumber5 size="32px" color="white" />
 			</CounterButtonStyled>
 		</>
 	);

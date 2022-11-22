@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
-export const ImgStyled = styled.img`
-	position: absolute;
-	bottom: 9px;
-	left: 0;
-	right: 0;
-	width: 3%;
-	margin: 0 auto;
+export const ImgStyled = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
 `;
